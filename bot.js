@@ -1,8 +1,7 @@
-const CommandoClient = require('./client');
-const commando = require('./node_modules/discord.js-commando');
+const Commando = require('discord.js-commando');
 const path = require('path');
 const fs = require('fs');
-const client = new CommandoClient({
+const client = new Commando.Client({
 	commandPrefix: '!', // Préfixe des commandes (ex: ?help)
 	owner: '874290974371762187', // ID de l'owner du bot, peut également être un tableau d'id pour plusieurs owners, ex: ['ID1', 'ID2']
         disableMentions: 'everyone' // Désactive, par sécurité, l'utilisation du everyone par le bot
