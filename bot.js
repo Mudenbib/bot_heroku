@@ -1,5 +1,6 @@
 const CommandoClient = require('./client');
-const path = require('path')
+const commando = require('./node_modules/discord.js-commando');
+const path = require('path');
 const fs = require('fs');
 const client = new CommandoClient({
 	commandPrefix: '!', // Préfixe des commandes (ex: ?help)
